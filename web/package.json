@@ -1,0 +1,19 @@
+{
+  "name": "htmx-hyper-fast",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.8.0"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^4.5.4",
+    "@picocss/pico": "^1.4.4",
+    "htmx.org": "^1.7.0",
+    "hyperscript.org": "^0.9.5"
+  }
+}

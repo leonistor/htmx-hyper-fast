@@ -1,0 +1,10 @@
+h1 {
+    color      : indianred;
+    font-weight: bold;
+}
+
+hr {
+    border-style: dotted;
+    border-color: lightslategray;
+    border-width: 1px;
+}
