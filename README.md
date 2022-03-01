@@ -14,15 +14,29 @@ css: https://github.com/picocss/pico
 
 icons: https://glyphs.fyi/dir?i=cog
 
-## tray an API Gateway / Reverse Proxy
+## API Gateway / Reverse Proxy: caddy
 
-### caddy
+see `Caddyfile`
 
 - install: https://caddyserver.com/docs/install#static-binaries
 - reverse proxy doc: https://caddyserver.com/docs/caddyfile/directives/reverse_proxy
 - tut: https://florian-vick.medium.com/why-you-should-use-caddy-as-your-webserver-19f5947efb3e
 
-### krakend
+#### if not enough use krakend
 
 - install: https://www.krakend.io/docs/overview/introduction/
 - conf designer: https://github.com/devopsfaith/krakendesigner
+
+## dev config
+
+Prerequisites:
+
+- install caddy (void linux has latest binary but no plugins dev)
+- in `<PROJROOT>/server` activate venv: 'pipenv shell' and install `pipenv install`
+- install pnpm (although just npm might work)
+
+Must launch three "servers" from project root dir:
+
+- caddy: `caddy run --config ./Caddyfile`
+- backend: `cd server && python -m uvicorn main:app --reload`
+- frontend: `cd web && pnp run dev`
