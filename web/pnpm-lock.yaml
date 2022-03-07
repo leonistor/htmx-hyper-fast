@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@fontsource/inter': ^4.5.4
+  '@fontsource/material-icons': ^4.5.2
   '@fontsource/roboto': ^4.5.3
   '@picocss/pico': ^1.4.4
   htmx.org: ^1.7.0
@@ -11,6 +12,7 @@ specifiers:
 
 dependencies:
   '@fontsource/inter': 4.5.4
+  '@fontsource/material-icons': 4.5.2
   '@fontsource/roboto': 4.5.3
   '@picocss/pico': 1.4.4
   htmx.org: 1.7.0
@@ -24,6 +26,10 @@ packages:
 
   /@fontsource/inter/4.5.4:
     resolution: {integrity: sha512-D0icTFpt9bWvB/OEXMztYf0bhUQZoDIYpsco5C7GVfxgKDRl8Jdn3N2aHHQqwjgRUUvRuyMv8HrRM8Hrt4U52w==}
+    dev: false
+
+  /@fontsource/material-icons/4.5.2:
+    resolution: {integrity: sha512-J6Slv1GhQ42TF/DbEIvsebIe1rYvkMrEglVsPYvKAnbQzpm7m7Uv4bkpbsqxjXJvaJZWefg1sXqvCOYAyBTfIA==}
     dev: false
 
   /@fontsource/roboto/4.5.3:
