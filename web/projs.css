@@ -1,0 +1,7 @@
+:root {
+    --body-bg: var(--light-500);
+}
+
+body {
+    font: 500 1rem/1.5 "Roboto", sans-serif;
+}

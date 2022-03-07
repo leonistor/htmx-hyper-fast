@@ -12,8 +12,10 @@
     },
     "dependencies": {
         "@fontsource/inter": "^4.5.4",
+        "@fontsource/roboto": "^4.5.3",
         "@picocss/pico": "^1.4.4",
         "htmx.org": "^1.7.0",
-        "hyperscript.org": "^0.9.5"
+        "hyperscript.org": "^0.9.5",
+        "vite-plugin-handlebars": "^1.6.0"
     }
 }
