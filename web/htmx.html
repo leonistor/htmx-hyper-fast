@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTMX Examples</title>
+</head>
+
+<body>
+    <header class="container">
+        <h1>HTMX examples</h1>
+    </header>
+
+
+    <main class="container">
+
+        <section id="click-to-edit">
+            <h3>Click to edit <a
+                   href="https://htmx.org/examples/click-to-edit/">[doc]</a>
+            </h3>
+            <!--
+            <div hx-target="this" hx-swap="outerHTML">
+                <label>First Name</label>: Joe
+                <label>Last Name</label>: Blow
+                <div><label>Email</label>: joe@blow.me</div>
+                <button hx-get="/api/contact/1/edit">
+                    Click to edit
+                </button>
+            </div>
+            -->
+
+            <fieldset hx-target="this" hx-swap="outerHTML">
+                <div class="grid">
+                    <label>First Name</label>
+                    <p><strong>Joe</strong></p>
+                </div>
+                <div class="grid">
+                    <label>Last Name</label>
+                    <p><strong>Blow</strong></p>
+                </div>
+                <div class="grid">
+                    <label>Email</label>
+                    <p><strong>joe@blow.me</strong></p>
+                </div>
+                <button hx-get="/api/contact/1/edit">Click to
+                    edit</button>
+            </fieldset>
+
+
+        </section>
+
+    </main>
+
+
+    <footer class="container">
+        <hr>
+        <a href="index.html">⬅️ Back to index</a>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
