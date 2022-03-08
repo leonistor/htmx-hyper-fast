@@ -6,6 +6,8 @@ let partials = resolve(__dirname, 'partials')
 let project_files = readdirSync(__dirname)
     .filter((file) => file.startsWith("proj") && file.endsWith("html"))
 
+// TODO: credits
+
 export default {
     plugins: [
         handlebars({

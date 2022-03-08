@@ -2,38 +2,39 @@
 <html lang="en">
 
 <head>
-    {{> _head }}
+  {{> _head }}
 
-    <link rel="stylesheet" href="projs.css">
+  <link rel="stylesheet" href="projs.css">
 
-    <title>50 projects with Hyperscript</title>
+  <title>50 projects with Hyperscript</title>
 </head>
 
 <body>
-    <header class="container">
-        <h1>50 projects with hyperscript</h1>
-    </header>
+  <header class="container">
+    <h1>50 projects with hyperscript</h1>
+  </header>
 
 
-    <main class="container">
+  <main class="container">
 
-        <h1>50 projects content</h1>
+    <h1>50 projects content</h1>
 
-        <h3><span class="material-icons">analytics</span> Ana are mere</h3>
-        <ul>
-            {{#each projects}}
-            <li>
-                <a href="{{this}}">{{this}}</a>
-            </li>
-            {{/each}}
-        </ul>
+    <h3><span class="material-icons">analytics</span> Ana are mere</h3>
+    <ul>
+      {{#each projects}}
+        <!-- TODO: hadlebar helper to get title from filename -->
+        <li>
+          <a href="{{this}}">{{this}}</a>
+        </li>
+      {{/each}}
+    </ul>
 
-    </main>
+  </main>
 
 
-    {{> _footer }}
+  {{> _footer }}
 
-    <script type="module" src="/projs.js"></script>
+  <script type="module" src="/projs.js"></script>
 </body>
 
 </html>

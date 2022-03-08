@@ -57,13 +57,24 @@
     </section>
 
 
+    <script type="text/javascript">
+      credits = [
+        { info: "ana are mere", url: "http://google.com" },
+        { info: "zuza cere pula", url: "http://pornhub.com" },
+      ]
+      console.log(credits)
+    </script>
     <section class="row mt-6">
       <div class="row">
         <h3 class="fw-thin mb-3 text-center">Credits</h3>
       </div>
       <div class="row">
         <ul>
+          {{#each window.credits}}
+            <li>{{this}}</li>
+          {{/each}}
           <li>htmx-hs guy</li>
+          <li>50 projs authors</li>
           <li>fast api</li>
           <li>py tools</li>
           <li>icons</li>
