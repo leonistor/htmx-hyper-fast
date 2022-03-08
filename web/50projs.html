@@ -2,11 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{> _head }}
 
-    <link rel="stylesheet" href="/static/grayshift-1.0.2-dist/grayshift.css">
     <link rel="stylesheet" href="projs.css">
 
     <title>50 projects with Hyperscript</title>
@@ -25,7 +22,9 @@
         <h3><span class="material-icons">analytics</span> Ana are mere</h3>
         <ul>
             {{#each projects}}
-            <li>{{this}}</li>
+            <li>
+                <a href="{{this}}">{{this}}</a>
+            </li>
             {{/each}}
         </ul>
 

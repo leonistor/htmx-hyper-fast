@@ -1,8 +1,0 @@
-:root {
-    --body-bg: var(--light-500);
-}
-
-/* hack: from grayshift but change "Inter" to "Roboto" */
-body {
-    font: 500 1rem/1.5 "Roboto", sans-serif;
-}

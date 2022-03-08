@@ -1,10 +1,8 @@
-h1 {
-    color      : indianred;
-    font-weight: bold;
+:root {
+    --body-bg: var(--light-500);
 }
 
-hr {
-    border-style: dotted;
-    border-color: lightslategray;
-    border-width: 1px;
+/* hack: from grayshift but change "Inter" to "Roboto" */
+body {
+    font: 500 1rem/1.5 "Roboto", sans-serif;
 }

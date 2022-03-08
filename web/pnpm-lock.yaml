@@ -1,20 +1,12 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@fontsource/inter': ^4.5.4
-  '@fontsource/material-icons': ^4.5.2
-  '@fontsource/roboto': ^4.5.3
-  '@picocss/pico': ^1.4.4
   htmx.org: ^1.7.0
   hyperscript.org: ^0.9.5
   vite: ^2.8.0
   vite-plugin-handlebars: ^1.6.0
 
 dependencies:
-  '@fontsource/inter': 4.5.4
-  '@fontsource/material-icons': 4.5.2
-  '@fontsource/roboto': 4.5.3
-  '@picocss/pico': 1.4.4
   htmx.org: 1.7.0
   hyperscript.org: 0.9.5
   vite-plugin-handlebars: 1.6.0
@@ -23,22 +15,6 @@ devDependencies:
   vite: 2.8.4
 
 packages:
-
-  /@fontsource/inter/4.5.4:
-    resolution: {integrity: sha512-D0icTFpt9bWvB/OEXMztYf0bhUQZoDIYpsco5C7GVfxgKDRl8Jdn3N2aHHQqwjgRUUvRuyMv8HrRM8Hrt4U52w==}
-    dev: false
-
-  /@fontsource/material-icons/4.5.2:
-    resolution: {integrity: sha512-J6Slv1GhQ42TF/DbEIvsebIe1rYvkMrEglVsPYvKAnbQzpm7m7Uv4bkpbsqxjXJvaJZWefg1sXqvCOYAyBTfIA==}
-    dev: false
-
-  /@fontsource/roboto/4.5.3:
-    resolution: {integrity: sha512-NUvBTj332dFRdiVkLlavXbDGoD2zyyeGYmMyrXOnctg/3e4pq95+rJgNfUP+k4v8UBk2L1aomGw9dDjbRdAmTg==}
-    dev: false
-
-  /@picocss/pico/1.4.4:
-    resolution: {integrity: sha512-MuL4MOY1Tugf91N06mhYETVqMiNeT9gObMJ0WNrnbSGBw61gsqXzn7ScjXvVpnQmFC8DP13mluzz1s+ogpiuEQ==}
-    dev: false
 
   /esbuild-android-arm64/0.14.23:
     resolution: {integrity: sha512-k9sXem++mINrZty1v4FVt6nC5BQCFG4K2geCIUUqHNlTdFnuvcqsY7prcKZLFhqVC1rbcJAr9VSUGFL/vD4vsw==}
