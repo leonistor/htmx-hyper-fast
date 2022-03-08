@@ -2,31 +2,81 @@
 <html lang="en">
 
 <head>
-    {{> _head }}
+  {{> _head }}
 
-    <title>HTMX + Hyperscript = ❤️</title>
+  <title>HTMX + Hyperscript = ❤️</title>
 </head>
 
 <body>
-    <header class="container">
-        <h1>Main Page</h1>
-    </header>
+  <div class="container py-6">
+
+    <section class="row mb-5">
+      <div class="row">
+        <h1 class="fw-thin mb-3 text-center">HTMX + Hyperscript = ❤️ </h1>
+      </div>
+      <div class="row">
+        <p class="fs-2 text-center">Explore <a href="https://htmx.org/examples/" target="_blank">HTMX</a> and <a href="https://hyperscript.org/" target="_blank">Hyperscript</a> capabilities.</p>
+      </div>
+    </section>
+
+    <section class="row mb-4">
+      <div class="col-6">
+        <div class="card">
+          <div>
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M48.5 22.002L29.5711 22.002C25.0435 22.002 20.7014 23.8005 17.5 27.002C14.2986 30.2034 12.5 34.5455 12.5 39.073V40.9309C12.5 44.3977 13.5545 47.7558 15.486 50.5763" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M31.5 58.0021H50.4289C54.9565 58.0021 59.2986 56.2036 62.5 53.0021C65.7014 49.8007 67.5 45.4586 67.5 40.931V39.0732C67.5 35.6064 66.4455 32.2483 64.514 29.4277" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M48.5 29.759V22.0016V14.2443C48.5 12.6786 50.3929 11.8946 51.5 13.0016L58.909 20.4107C59.7877 21.2893 59.7877 22.714 58.909 23.5926L51.5 31.0016C50.3929 32.1087 48.5 31.3246 48.5 29.759Z" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M31.5001 50.2443V58.0016L31.5001 65.759C31.5001 67.3246 29.6072 68.1087 28.5001 67.0016L21.0911 59.5926C20.2125 58.714 20.2125 57.2893 21.0911 56.4107L28.5002 49.0016C29.6072 47.8946 31.5001 48.6786 31.5001 50.2443Z" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3 class="mb-3 fw-thin">
+            <a href="htmx.html">HTMX
+              Examples</a>
+          </h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aliquid vel asperiores earum.</p>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card">
+          <div>
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32.9966 23C32.9966 29.6274 27.624 35 20.9966 35C14.3692 35 8.99658 29.6274 8.99658 23C8.99658 16.3726 14.3692 11 20.9966 11C27.624 11 32.9966 16.3726 32.9966 23Z" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M47.097 13.1724L66.896 32.9713" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M66.896 13.1724L47.097 32.9713" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M32.5178 56.1374C33.1784 56.5227 33.1784 57.4772 32.5178 57.8626L11.4984 70.1239C10.8327 70.5123 9.99658 70.0321 9.99658 69.2613L9.99658 44.7387C9.99658 43.9679 10.8327 43.4877 11.4984 43.8761L32.5178 56.1374Z" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M44.9966 46C44.9966 45.4477 45.4443 45 45.9966 45H67.9966C68.5489 45 68.9966 45.4477 68.9966 46V68C68.9966 68.5523 68.5489 69 67.9966 69H45.9966C45.4443 69 44.9966 68.5523 44.9966 68V46Z" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3 class="mb-3 fw-thin">
+            <a href="50projs.html">50 projects 50 Days</a>
+          </h3>
+          <p>Solorem, cupiditate excepturi magnam a cum consectetur corrupti optio placeat voluptate officiis architecto deleniti!</p>
+        </div>
+      </div>
+    </section>
 
 
-    <main class="container">
+    <section class="row mt-6">
+      <div class="row">
+        <h3 class="fw-thin mb-3 text-center">Credits</h3>
+      </div>
+      <div class="row">
+        <ul>
+          <li>htmx-hs guy</li>
+          <li>fast api</li>
+          <li>py tools</li>
+          <li>icons</li>
+          <li>grayshift</li>
+        </ul>
+      </div>
+    </section>
+  </div>
 
-        <section>
-            <a href="htmx.html">HTMX Examples</a>
-        </section>
-        <section>
-            <a href="50projs.html">50 projects</a>
-        </section>
-
-    </main>
 
 
 
-    <script type="module" src="/main.js"></script>
+  <script type="module" src="/main.js"></script>
 </body>
 
 </html>
