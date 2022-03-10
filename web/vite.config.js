@@ -12,15 +12,15 @@ let credits = [
     },
     {
         url: "https://50projects50days.com/",
-        info: "Traversy Media (50 projects)"
+        info: "50 projects in 50 days"
     },
     {
         url: "https://fastapi.tiangolo.com/",
         info: "FastAPI"
     },
     {
-        url: "https://pipenv.pypa.io/en/latest/",
-        info: "Pipenv"
+        url: "https://domonic.readthedocs.io/",
+        info: "Domonic"
     },
     {
         url: "https://glyphs.fyi/",

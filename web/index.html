@@ -10,7 +10,7 @@
 <body>
   <div class="container py-6">
 
-    <section class="row mb-5">
+    <section class="row mb-6">
       <div class="row">
         <h1 class="fw-thin mb-3 text-center">HTMX + Hyperscript = ❤️ </h1>
       </div>
@@ -19,60 +19,54 @@
       </div>
     </section>
 
-    <section class="row mb-4">
+    <section class="row mb-6">
       <div class="col-6">
-        <div class="card">
-          <div>
-            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M48.5 22.002L29.5711 22.002C25.0435 22.002 20.7014 23.8005 17.5 27.002C14.2986 30.2034 12.5 34.5455 12.5 39.073V40.9309C12.5 44.3977 13.5545 47.7558 15.486 50.5763" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M31.5 58.0021H50.4289C54.9565 58.0021 59.2986 56.2036 62.5 53.0021C65.7014 49.8007 67.5 45.4586 67.5 40.931V39.0732C67.5 35.6064 66.4455 32.2483 64.514 29.4277" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M48.5 29.759V22.0016V14.2443C48.5 12.6786 50.3929 11.8946 51.5 13.0016L58.909 20.4107C59.7877 21.2893 59.7877 22.714 58.909 23.5926L51.5 31.0016C50.3929 32.1087 48.5 31.3246 48.5 29.759Z" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M31.5001 50.2443V58.0016L31.5001 65.759C31.5001 67.3246 29.6072 68.1087 28.5001 67.0016L21.0911 59.5926C20.2125 58.714 20.2125 57.2893 21.0911 56.4107L28.5002 49.0016C29.6072 47.8946 31.5001 48.6786 31.5001 50.2443Z" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </div>
+        <div class="card h-100">
           <h3 class="mb-3 fw-thin">
             <a href="htmx.html">HTMX
               Examples</a>
           </h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aliquid vel asperiores earum.</p>
+          <p>The official <a href="https://htmx.org/examples/" target="_blank">HTMX examples</a> implemented with
+            a FastAPI server, HTML generated with <a href="https://domonic.readthedocs.io/" target="_blank">domonic</a>.</p>
         </div>
       </div>
       <div class="col-6">
-        <div class="card">
-          <div>
-            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M32.9966 23C32.9966 29.6274 27.624 35 20.9966 35C14.3692 35 8.99658 29.6274 8.99658 23C8.99658 16.3726 14.3692 11 20.9966 11C27.624 11 32.9966 16.3726 32.9966 23Z" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M47.097 13.1724L66.896 32.9713" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M66.896 13.1724L47.097 32.9713" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M32.5178 56.1374C33.1784 56.5227 33.1784 57.4772 32.5178 57.8626L11.4984 70.1239C10.8327 70.5123 9.99658 70.0321 9.99658 69.2613L9.99658 44.7387C9.99658 43.9679 10.8327 43.4877 11.4984 43.8761L32.5178 56.1374Z" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M44.9966 46C44.9966 45.4477 45.4443 45 45.9966 45H67.9966C68.5489 45 68.9966 45.4477 68.9966 46V68C68.9966 68.5523 68.5489 69 67.9966 69H45.9966C45.4443 69 44.9966 68.5523 44.9966 68V46Z" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </div>
+        <div class="card h-100">
           <h3 class="mb-3 fw-thin">
-            <a href="50projs.html">50 projects 50 Days</a>
+            <a href="50projs.html">50 projects in 50 Days</a>
           </h3>
-          <p>Solorem, cupiditate excepturi magnam a cum consectetur corrupti optio placeat voluptate officiis architecto deleniti!</p>
+          <p>50 mini-projects by <a href="https://50projects50days.com/" target="_blank">Brad Traversy and Florin Pop</a>
+            implemented with <a href="https://hyperscript.org/" target="_blank">hyperscript</a>.</p>
         </div>
       </div>
     </section>
 
-
     <section class="row mt-6">
       <div class="row">
-        <h3 class="fw-thin mb-3 text-center">Credits</h3>
+        <h4 class="fw-thin mb-3 text-center">Credits</h4>
       </div>
       <div class="row">
         <div class="d-flex justify-content-center">
           {{#each credits}}
-            <div class="credit card mx-2 p-2 rounded-pill
+            <div class="credit card mx-2 p-1 bg-light
                         d-flex align-items-center justify-content-center text-center">
               {{#with this}}
-
                 <a href="{{ url }}" target="_blank">{{ info }}</a>
               {{/with}}
             </div>
           {{/each}}
         </div>
+      </div>
+    </section>
+
+    <section class="row mt-6">
+      <div class="row">
+        <p class="text-center">
+          <svg width="30" height="30" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28.7444 60.1431C28.7444 60.416 28.429 60.6344 28.0315 60.6344C27.579 60.6754 27.2637 60.457 27.2637 60.1431C27.2637 59.8702 27.579 59.6518 27.9766 59.6518C28.3879 59.6109 28.7444 59.8292 28.7444 60.1431ZM24.4806 59.529C24.3847 59.8019 24.6589 60.1158 25.0702 60.1977C25.4266 60.3342 25.8379 60.1977 25.9202 59.9247C26.0024 59.6518 25.7419 59.3379 25.3306 59.2151C24.9742 59.1195 24.5766 59.256 24.4806 59.529ZM30.5403 59.297C30.1427 59.3925 29.8685 59.6518 29.9097 59.9657C29.9508 60.2386 30.3073 60.4161 30.7185 60.3205C31.1161 60.225 31.3903 59.9657 31.3492 59.6927C31.3081 59.4334 30.9379 59.256 30.5403 59.297ZM39.5613 7C20.546 7 6 21.3707 6 40.2997C6 55.4347 15.5694 68.3862 29.2379 72.9444C30.9927 73.2583 31.6097 72.1801 31.6097 71.2931C31.6097 70.4469 31.5685 65.7795 31.5685 62.9135C31.5685 62.9135 21.9718 64.9606 19.9565 58.8466C19.9565 58.8466 18.3935 54.8752 16.1452 53.8516C16.1452 53.8516 13.0056 51.709 16.3645 51.7499C16.3645 51.7499 19.7782 52.0229 21.6565 55.271C24.6589 60.5389 29.6903 59.024 31.6508 58.1233C31.9661 55.9397 32.8573 54.4248 33.8444 53.5241C26.1806 52.678 18.4484 51.5725 18.4484 38.4437C18.4484 34.6906 19.4903 32.8073 21.6839 30.4053C21.3274 29.5183 20.1621 25.8608 22.0403 21.1387C24.9056 20.2517 31.5 24.8235 31.5 24.8235C34.2419 24.0593 37.1895 23.6635 40.1097 23.6635C43.0298 23.6635 45.9774 24.0593 48.7194 24.8235C48.7194 24.8235 55.3137 20.238 58.179 21.1387C60.0573 25.8744 58.8919 29.5183 58.5355 30.4053C60.729 32.8209 62.0726 34.7043 62.0726 38.4437C62.0726 51.6135 53.9976 52.6643 46.3339 53.5241C47.5952 54.6022 48.6645 56.6494 48.6645 59.8565C48.6645 64.4557 48.6234 70.1467 48.6234 71.2658C48.6234 72.1528 49.254 73.231 50.9952 72.9171C64.7048 68.3862 74 55.4347 74 40.2997C74 21.3707 58.5766 7 39.5613 7ZM19.3258 54.07C19.1476 54.2065 19.1887 54.5204 19.4218 54.7797C19.6411 54.998 19.9565 55.0936 20.1347 54.9161C20.3129 54.7797 20.2718 54.4658 20.0387 54.2065C19.8194 53.9881 19.504 53.8926 19.3258 54.07ZM17.8452 52.9646C17.7492 53.142 17.8863 53.3603 18.1605 53.4968C18.3798 53.6333 18.654 53.5923 18.75 53.4013C18.846 53.2239 18.7089 53.0055 18.4347 52.869C18.1605 52.7871 17.9411 52.8281 17.8452 52.9646ZM22.2871 57.823C22.0677 58.0005 22.15 58.4099 22.4653 58.6692C22.7806 58.9831 23.1782 59.024 23.3565 58.8057C23.5347 58.6282 23.4524 58.2188 23.1782 57.9595C22.8766 57.6456 22.4653 57.6047 22.2871 57.823ZM20.7242 55.8169C20.5048 55.9533 20.5048 56.3082 20.7242 56.6221C20.9435 56.936 21.3137 57.0724 21.4919 56.936C21.7113 56.7585 21.7113 56.4037 21.4919 56.0898C21.3 55.7759 20.9435 55.6395 20.7242 55.8169Z" fill="#C2CCDE" />
+          </svg>
+          <a class="text-secondary" href="https://github.com/leonistor/htmx-hyper-fast" target="_blank">https://github.com/leonistor/htmx-hyper-fast</a>.
+        </p>
       </div>
     </section>
   </div>
