@@ -44,6 +44,9 @@ export default {
     plugins: [
         handlebars({
             partialDirectory: partials,
+            helpers: {
+                project_title: (filename) => filename.replace(".html", "").replace("proj", "").split("_").join(" "),
+            },
             context: {
                 projects: project_files,
                 credits,

@@ -10,3 +10,7 @@ body {
 .credit {
     width: 7rem;
 }
+
+.project_title {
+    text-transform: capitalize;
+}

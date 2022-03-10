@@ -4,35 +4,31 @@
 <head>
   {{> _head }}
 
-  <link rel="stylesheet" href="projs.css">
-
   <title>50 projects with Hyperscript</title>
 </head>
 
 <body>
-  <header class="container">
-    <h1>50 projects with hyperscript</h1>
-  </header>
+  <div class="container py-6">
 
 
-  <main class="container">
+    <header class="row mb-6">
+      <h1>50 projects with hyperscript</h1>
+    </header>
 
-    <h1>50 projects content</h1>
+    <main class="row mb-6">
 
-    <h3><span class="material-icons">analytics</span> Ana are mere</h3>
-    <ul>
-      {{#each projects}}
-        <!-- TODO: hadlebar helper to get title from filename -->
-        <li>
-          <a href="{{this}}">{{this}}</a>
-        </li>
-      {{/each}}
-    </ul>
+      <ul>
+        {{#each projects}}
+          <li>
+            <a class="project_title" href="{{ this }}">{{ project_title this }}</a>
+          </li>
+        {{/each}}
+      </ul>
 
-  </main>
+    </main>
 
-
-  {{> _footer }}
+    {{> _footer }}
+  </div>
 
   <script type="module" src="/projs.js"></script>
 </body>
